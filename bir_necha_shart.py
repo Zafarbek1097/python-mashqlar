@@ -206,7 +206,7 @@ Created on Sat May 29 20:07:25 2021
      #       print(f"Do'konimizda {mahsulot} yo'q")
 #else: 
  #   print("Savatingiz bo'sh")            
-    
+#____________________________________________________________________________    
 
 ##mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
 #               'kartoshka', 'olma', 'banan', 'uzum', 'qovun']
@@ -229,16 +229,30 @@ Created on Sat May 29 20:07:25 2021
 #else:
  # print("Siz so'ragan barcha mahsulotlar do'konimizda bor")
   
+#________________MASALA_________________________________________________________
 
-
+#foydalanuvchilar = []
+#for  n in  range(5):
+ #   foydalanuvchilar.append(input(f"{n+1}- loginni kiriting? >> "))
+#print(foydalanuvchilar)  
   
+#login = input("Yangi login kiriting? >> ")    
+
+#if  login in foydalanuvchilar:
+ #   print("Login band yangi login tanlang! >>")
+#else:
+ #   print(f"Xush kelibsiz {login.title()}")    
 
 
+#_______________________________________________________________________________
 
+son = int(input("Istalgan butun son kiriting?>>"))
 
-
-
-
+sonlar = list(range(1,11))
+print(sonlar)
+for butun in sonlar:
+    if son%butun == 0:
+        print(f"{son} soni {butun} ga qoldiqsiz bo'linadi ")
 
   
     
